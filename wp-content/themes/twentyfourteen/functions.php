@@ -520,3 +520,39 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+/**
+* custom query
+*
+*/
+function CustomQuery($argsCustom,$template='',$templateFirst=''){
+	$my_query = new WP_Query( $argsCustom);
+	$count=0;
+	ob_start();
+	if ( $my_query->have_posts() ) :
+		while ( $my_query->have_posts() ) : $my_query->the_post();
+			if($count==0 && $templateFirst !=''){
+				get_template_part( 'content', $templateFirst);
+			}else{
+				get_template_part( 'content', $template);
+			}
+			$count++;
+		endwhile;
+	endif;
+	
+	wp_reset_postdata();
+	$output = ob_get_contents();
+	ob_end_clean();
+	return $output;
+}
+/***
+* Cut content
+*
+*/
+function cutString(&$title,$maxLength){
+	if(isset($title{$maxLength})){ 
+		$title = substr($title,0,$maxLength-2);
+		$title = substr($title,0,strripos($title,' ',0));
+		$title .= ' ...';
+	}
+}

@@ -113,12 +113,12 @@ body {
 }
 
 a {
-	color: #24890d;
+	color: #294a70;
 	text-decoration: none;
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: 0;
 }
 
 a:hover,
@@ -128,7 +128,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: #41a62a;
+	color: #f4a024;
 }
 
 h1,
@@ -935,10 +935,120 @@ header .primary-navigation{
 	width: 33.33%;
 	float: left;
 }
+.content-product h2{
+	margin: 0;
+	font-size: 16px;
+}
+.content-product h2 a{
+	font-size: 14px;
+}
+.info-product .post-thumbnail{
+	float: left;
+	width: 92px;
+	background: transparent;
+	text-align: center;
+}
 
+.content-product {
+	overflow: hidden;
+	padding-left: 5px;
+}
+.list-products{
+	margin: 0;
+}
+ul{
+	list-style: none;
+	margin: 0;
+}
+.list-products li{
+	float: left;
+	width: 100%;
+}
+#container {
+	display: inline-block;
+	padding: 10px 0 0 10px;
+}
+.block-content{
+	padding: 0 10px 0 0;
+}
+.info-product{
+	overflow: hidden;
+	padding: 5px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+.block-cachdung h2,.block-congdung h2{
+	font-size: 15px;
+	margin: 0;
+}
+.block-content h2.title{
+	margin: 0;
+	background: url(images/sprite-5.jpg) no-repeat 0 -46px;
+	font-size: 17px;
+	line-height: 22px;
+}
+.block-content h2.title span{
+	font-size: 17px;
+	background: url(images/sprite-5.jpg) no-repeat 100% -26px;
+	color: #fff;
+	padding: 0 25px 0 0;
+}
 
-
-
+.block-cachdung h2 span
+{
+	
+}
+.block-cachdung h2{
+}
+.home  .site::before{
+	width: auto!important;
+}
+.block-support {
+	float: left;
+	width: 100%;
+}
+.block-support .block-content div
+{
+	line-height: 100px;
+	background: #ccc;
+}
+.block-muaban,.block-benhly {
+	width: 50%;
+	float: left;
+}
+.block-congdung .block-content{
+	border-right: 1px solid #ddd;
+}
+.block-cachdung .block-content{
+	padding-left: 10px;
+}
+.block-content a {
+	display: block;
+	text-align: justify;
+}
+.block-content .first .post-thumbnail{
+	border: 3px solid #ddd;
+	width: auto;
+}
+.block-content .entry-title{
+	font-size: 14px;
+	text-transform: none;
+	padding-top: 5px;
+}
+.block-content .first .entry-title { 
+	font-size: 17px;
+	min-height: 33px;
+}
+.block-content  .entry-summary{
+	font-size: 14px;
+}
+.block-content .entry-title a{
+	color: #294a70 ;
+	font-weight: bold;
+}
+.block-muaban .first .post-thumbnail img{
+	
+}
 
 
 
@@ -1185,7 +1295,7 @@ header .primary-navigation{
 }
 
 a.post-thumbnail:hover {
-	background-color: #999;
+	/*background-color: #999;*/
 }
 
 .full-width .post-thumbnail img {
@@ -3267,7 +3377,7 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 401px) {
 	a.post-thumbnail:hover img {
-		opacity: 0.85;
+		/*opacity: 0.85;*/
 	}
 
 	.full-size-link:before,

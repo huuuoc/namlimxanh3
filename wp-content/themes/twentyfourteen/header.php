@@ -40,40 +40,43 @@
 		</a>
 	</div>
 	<?php endif; ?>
+	<div class="header-container">
+		<div class="header">
+			<header id="masthead" class="site-header" role="banner">
+				<div class="header-main">
+					<?php if ( is_front_page() && is_home() ) : ?>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></h1>
+					<?php else : ?>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></p>
+					<?php endif;?>
+					<div class="search-box">
+						<?php get_search_form(); ?>
+					</div>
+					<div class="social">
+						<a title="facebook" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/fb.png"  atl="Nấm lim xanh" /></a>
+						<a title="twitter" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"  atl="Nấm lim xanh" /></a>
+						<a title="youtube" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/youtb.png"  atl="Nấm lim xanh" /></a>
+						<a title="google" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/google.png"  atl="Nấm lim xanh" /></a>
+						<!--<a title="rss" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.png"  atl="Nấm lim xanh" /></a>-->
+					</div>
+					<div class="hotline">
+						Hotline : <span>04.3797.0138</span>
+					</div>
+				</div>
+				<div class="banner-top">banner</div>
+				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+					<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="header-main">
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></p>
-			<?php endif;?>
-			<div class="search-box">
-				<?php get_search_form(); ?>
-			</div>
-			<div class="social">
-				<a title="facebook" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/fb.png"  atl="Nấm lim xanh" /></a>
-				<a title="twitter" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.png"  atl="Nấm lim xanh" /></a>
-				<a title="youtube" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/youtb.png"  atl="Nấm lim xanh" /></a>
-				<a title="google" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/google.png"  atl="Nấm lim xanh" /></a>
-				<!--<a title="rss" href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/rss.png"  atl="Nấm lim xanh" /></a>-->
-			</div>
-			<div class="hotline">
-				Hotline : <span>04.3797.0138</span>
-			</div>
+				<div id="search-container" class="search-box-wrapper hide">
+					<div class="search-box">
+						<?php get_search_form(); ?>
+					</div>
+				</div>
+			</header><!-- #masthead -->
 		</div>
-		<div class="banner-top">banner</div>
-		<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-			<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav>
-
-		<div id="search-container" class="search-box-wrapper hide">
-			<div class="search-box">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
-	</header><!-- #masthead -->
-
-	<div id="main" class="site-main">
+	</div>
+	<div class="main-container">
+		<div id="main" class="site-main">

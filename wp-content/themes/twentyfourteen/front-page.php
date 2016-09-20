@@ -9,35 +9,98 @@
 
 <?php get_header(); ?>
 </div>
-<?php
-	$args_products = array(
-		'category__in' => array(3),
-		'orderby'   => 'meta_value_num',
-		'meta_key'  => 'price_product',
-		'order'   => 'ASC',
-	);
-	$my_query_products = new WP_Query( $args_products );
-?>
+
 <div id="container">
-	<!-- Products -->
-	<div class="col-1">
-		col-1
-	</div>
-	<div class="col-1">
-		col-2
-	</div>
-	<div class="col-1">
-		<ul class="list-products">
+	<!--Block Cong dung-->
+	<div class="col-1 block-congdung block">
+		<div class="block-content">
 			<?php
-				if ( $my_query_products->have_posts() ) :
-					while ( $my_query_products->have_posts() ) : $my_query_products->the_post();
-						get_template_part( 'content', 'listproducts');
-					endwhile;
-				endif;
-				//wp_reset_postdata();
+				$args1 = array(
+					'category__in' => array(4),
+					'order'   => 'ASC'
+				);
+				echo CustomQuery($args1,'featured-post','featured-post-first');
 			?>
-		</ul>
+		</div>
 	</div>
+	
+	<!--Block Cach dung-->
+	<div class="col-1 block-cachdung">
+		<div class="block-content">
+			<h2 class="title"><span>Cách sử dụng nấm lim xanh</span></h2>
+			<ul>
+			<?php
+				$args2 = array(
+					'category__in' => array(5),
+					'order'   => 'ASC'
+				);
+				echo CustomQuery($args2,'listTitle');
+			?>
+			</ul>
+		</div>
+	</div>
+	
+	<!--Block san pham-->
+	<div class="col-1">
+		<div class="block-content">
+			<ul class="list-products">
+				<?php
+					$args_products = array(
+						'category__in' => array(3),
+						'orderby'   => 'meta_value_num',
+						'meta_key'  => 'price_product',
+						'order'   => 'ASC',
+					);
+					$a = CustomQuery($args_products,'listproducts');
+					echo $a;
+				?>
+			</ul>
+		</div>
+	</div>
+	
+	<!--Block Ho tro-->
+	<div class="block-support">
+		<div class="block-content">
+			<div class="">
+				Hỗ trợ
+			</div>
+		</div>
+	</div>
+	
+	<!--Block Mua ban-->
+	<div class="block-muaban">
+		<div class="block-content">
+			<h2 class="title"><span>Mua bán nấm lim xanh</span></h2>
+			<div class="content">
+				<?php
+					$args2 = array(
+						'category__in' => array(6),
+						'order'   => 'ASC'
+					);
+					$a = CustomQuery($args2,'featured-post','featured-post-first');
+					echo $a;
+				?>
+			</div>
+		</div>
+	</div>
+	
+	<!--Block Benh ly-->
+	<div class="block-benhly">
+		<div class="block-content">
+			<h2 class="title"><span>Bệnh lý</span></h2>
+			<div class="content">
+				<?php
+					$args3 = array(
+						'category__in' => array(7),
+						'order'   => 'ASC'
+					);
+					$a = CustomQuery($args3,'featured-post','featured-post-first');
+					echo $a;
+				?>
+			</div>
+		</div>
+	</div>
+	
 </div>
 <?php // get_sidebar(); 
 	//get_sidebar( 'content' ); 
