@@ -59,10 +59,18 @@
 	</div>
 	
 	<!--Block Ho tro-->
-	<div class="block-support">
+	<div class="block-hoidap">
 		<div class="block-content">
-			<div class="">
-				Hỗ trợ
+			<div class="content">
+				<?php
+					$args4 = array(
+						'category__in' => array(8),
+						'order'   => 'ASC',
+						'posts_per_page' => 4
+					);
+					$a = CustomQuery($args4,'featured-post','featured-post-first');
+					echo $a;
+				?>
 			</div>
 		</div>
 	</div>

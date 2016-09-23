@@ -206,4 +206,15 @@
 			} );
 		}
 	} );
+	
+	// tab agency
+	$('.block-angency li').click(function(){
+		if (!$(this).hasClass('active')) {
+			var id = $(this).attr('lang');
+			$('.block-angency li.active').removeClass('active');
+			$('.block-angency .tab-content > div.active').removeClass('active');
+			$(this).addClass('active'); 
+			$('.block-angency .tab-content '+id).addClass('active'); 
+		}
+	});
 } )( jQuery );

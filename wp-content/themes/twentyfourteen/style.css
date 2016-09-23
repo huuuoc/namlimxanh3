@@ -940,7 +940,10 @@ header .primary-navigation{
 	font-size: 16px;
 }
 .content-product h2 a{
-	font-size: 14px;
+	font-size: 15px;
+}
+.price-product, .more-show{
+	font-size: 13px;
 }
 .info-product .post-thumbnail{
 	float: left;
@@ -982,13 +985,14 @@ ul{
 	margin: 0;
 }
 .block-content h2.title{
-	margin: 0;
+	margin: 0 0 5px 0;
+	padding-bottom: 5px;
 	background: url(images/sprite-5.jpg) no-repeat 0 -46px;
 	font-size: 17px;
-	line-height: 22px;
+	line-height: 19px;
 }
 .block-content h2.title span{
-	font-size: 17px;
+	font-size: 15px;
 	background: url(images/sprite-5.jpg) no-repeat 100% -26px;
 	color: #fff;
 	padding: 0 25px 0 0;
@@ -1003,14 +1007,9 @@ ul{
 .home  .site::before{
 	width: auto!important;
 }
-.block-support {
+.block-hoidap {
 	float: left;
 	width: 100%;
-}
-.block-support .block-content div
-{
-	line-height: 100px;
-	background: #ccc;
 }
 .block-muaban,.block-benhly {
 	width: 50%;
@@ -1031,16 +1030,20 @@ ul{
 	width: auto;
 }
 .block-content .entry-title{
-	font-size: 14px;
+	font-size: 13px;
 	text-transform: none;
 	padding-top: 5px;
+	margin: 0;
 }
 .block-content .first .entry-title { 
-	font-size: 17px;
-	min-height: 33px;
+	font-size: 15px;
+	min-height: 38px;
+	background: none;
+	padding-left: 0;
 }
 .block-content  .entry-summary{
-	font-size: 14px;
+	font-size: 13px;
+	text-align: justify;
 }
 .block-content .entry-title a{
 	color: #294a70 ;
@@ -1049,6 +1052,59 @@ ul{
 .block-muaban .first .post-thumbnail img{
 	
 }
+.block-hoidap .block-content article{
+	width: 25%;
+	float: left;
+}
+.block-hoidap .entry-summary{
+	display: none;
+}
+.block-hoidap  .block-content .post-thumbnail{
+	width: 100px;
+	float: left;
+}
+.block-hoidap article > div{
+	overflow: hidden;
+	padding: 0 10px;
+}
+.block-hoidap article:last-child > div{
+	overflow: hidden;
+	padding-right: 0;
+}
+.block-hoidap .block-content .content{
+	padding: 10px 0;
+	margin: 10px 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.block-hoidap .block-content  article  h2.entry-title{
+	font-size: 13px;
+	background: none;
+	padding-left: 0;
+}
+.block-cachdung ul{
+	font-size: 13px;
+}
+.block-muaban article.first a.post-thumbnail,
+.block-benhly article.first a.post-thumbnail{
+	width: 150px;
+	float: left;	
+}
+.block-muaban article.first > div, 
+.block-benhly article.first > div {
+	overflow: hidden;
+	padding: 0 0 0 10px;
+}
+
+.block-muaban article.first > div  h2.entry-title,
+.block-benhly article.first > div  h2.entry-title{
+	margin: 0;
+}
+.block-cachdung ul li,
+.block-content .entry-title{
+	background: url(images/sprite-2.gif.png) no-repeat 0 -288px;
+	padding-left: 12px;
+}
 
 
 
@@ -1057,15 +1113,60 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
-
+.arrow-left {
+  width:0px;
+  height:0px;
+  border-bottom:9px solid transparent;
+  border-top:9px solid transparent;
+  border-right:9px solid #2f2f2f;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -9px;
+}
+.block-angency ul li.active{
+	background: #ccc;
+	position: relative;
+}
+.block-angency .tab-content{
+	overflow: hidden;
+}
+.block-angency .tab-content > div{
+	display: none;
+}
+.block-angency .tab-content > div.active{
+	display: block;
+	background: #2f2f2f;
+	min-height: 72px;
+	color: #fff;
+}
+.block-support{
+	padding:10px;
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.block-angency{
+	padding: 0 10px;
+	overflow: hidden;
+}
+.block-angency ul{
+	width: 20%;
+	float: left;
+}
+.block-support ul li:first-child{
+	width: 26%;
+}
+.block-support ul li{
+	width: 18%;
+	float: left;
+}
+.site-info{
+	text-align: center;
+}
+.site-info p{
+	margin: 0;
+}
 .site-title {
 	float: left;
 	font-size: 18px;
