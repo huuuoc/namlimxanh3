@@ -8,7 +8,6 @@
 ?>
 
 <?php get_header(); ?>
-</div>
 
 <div id="container">
 	<!--Block Cong dung-->

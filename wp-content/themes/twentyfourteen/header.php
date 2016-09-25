@@ -45,9 +45,9 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="header-main">
 					<?php if ( is_front_page() && is_home() ) : ?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></h1>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-nam-lim-xanh.png"  atl="Nấm lim xanh" /></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"  atl="Nấm lim xanh" /></a></p>
+						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-nam-lim-xanh.png"  atl="Nấm lim xanh" /></a></p>
 					<?php endif;?>
 					<div class="search-box">
 						<?php get_search_form(); ?>
@@ -63,14 +63,7 @@
 						Hotline : <span>04.3797.0138</span>
 					</div>
 				</div>
-				<div class="banner-top">banner</div>
-				<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
-					<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
-					<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav>
-
-				<div id="search-container" class="search-box-wrapper hide">
+				<div class="banner-top">banner</div><div id="search-container" class="search-box-wrapper hide">
 					<div class="search-box">
 						<?php get_search_form(); ?>
 					</div>
@@ -78,5 +71,15 @@
 			</header><!-- #masthead -->
 		</div>
 	</div>
+	<div class="menu-container">
+		<div class="menu">
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav>
+		</div>
+	</div>
 	<div class="main-container">
-		<div id="main" class="site-main">
+		<div class="main">
+			<div id="main" class="site-main">

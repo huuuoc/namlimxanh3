@@ -109,8 +109,10 @@ textarea {
 }
 
 body {
-	background: #f0f0f0;
+	background: #f0f0f0 url(images/sprite-2.gif.png) repeat-x 0 -2606px;
+	
 }
+
 
 a {
 	color: #294a70;
@@ -820,15 +822,29 @@ span + .edit-link:before,
 
 .site {
 	background-color: #fff;
-	max-width: 1000px;
+	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
 }
-
+.header,
+.menu,.main{
+	max-width: 1000px;
+	margin: 0 auto;
+}
 .main-content {
 	width: 100%;
 }
-
+.menu-container{
+	width: 100%;
+	float: left;
+	background: url(images/bg-menu.png) repeat-x center center;
+}
+#primary-navigation{
+	width: 100%;
+	float: left;
+	margin: 0!important;
+	
+}
 
 /**
  * 4.0 Header
@@ -852,7 +868,7 @@ span + .edit-link:before,
 	z-index: 4;
 }
 .header-main .site-title{
-	padding: 10px;
+	padding: 5px 10px;
 }
 .header-main .search-box{
 	margin: 26px 0 0 56px;
@@ -895,7 +911,7 @@ header .primary-navigation{
 	width: 100%;
 	float: left;
 	margin: 0;
-	background: #294a70;
+	background: url(images/bg-menu.png) repeat-x center center;
 	border-bottom: 5px solid #f4a024 ;
 }
 .site-navigation .nav-menu > .current_page_item > a,
@@ -990,6 +1006,14 @@ ul{
 	background: url(images/sprite-5.jpg) no-repeat 0 -46px;
 	font-size: 17px;
 	line-height: 19px;
+}
+.block-cachdung .block-content h2.title{
+	background: url(images/bg-block-category.png) no-repeat center left 5px #09458d;
+	padding: 0 0 0 30px;
+	line-height: 30px;
+}
+.block-cachdung .block-content h2.title span{ 
+	background: none;
 }
 .block-content h2.title span{
 	font-size: 15px;
@@ -1127,6 +1151,12 @@ ul{
 .block-angency ul li.active{
 	background: #ccc;
 	position: relative;
+}
+.block-angency ul li .arrow-left{
+	display: none;
+}
+.block-angency ul li.active .arrow-left{
+	display: block;
 }
 .block-angency .tab-content{
 	overflow: hidden;
