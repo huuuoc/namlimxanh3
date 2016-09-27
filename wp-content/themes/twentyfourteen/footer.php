@@ -56,13 +56,13 @@
 					<?php get_sidebar( 'footer' ); ?>
 
 					<div class="site-info">
-						<p>CÔNG TY TNHH NẤM LIM XANH VIỆT NAM</p>
-						<p>(VIETNAM GREEN IRONWOOD'S MUSHROOM CO.,LTD)</p>
-						<p>Giấy ĐKKD: 4005995598 ngày 26/10/2012 cấp tại Sở KH&ĐT Quảng Nam</p>
-						<p>Địa chỉ: Tổ 5 - Xã Tiên Hiệp - Huyện Tiên Phước - Tỉnh Quảng Nam</p>
-						<p>Tổng phân phối Nấm lim xanh tự nhiên Tiên Phước trên toàn quốc.</p>
-						<?php // do_action( 'twentyfourteen_credits' ); ?>
-						<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), 'WordPress' ); ?></a>
+						<div class="footer-left"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-nam-lim-xanh.png"  atl="Nấm lim xanh" /></div>
+						<div class="footer-right">
+							<p class="name-company">Công Ty TNHH Nông Lâm Sản Tiên Phước - Nấm Lim Xanh Từ Rừng Nguyên Sinh</p>
+							<p><span class="lfloat">Liên hệ : 04.3797.0138 - 0936.476.588</span> <span class="rfloat">Trụ sở: 158/149 Hồ Tùng Mậu - Nam Từ Liêm - Hà Nội</span></p>
+							<p><span class="lfloat">Email: <a href="mailto:nonglamsantienphuoc@gmail.com">nonglamsantienphuoc@gmail.com</a></span><span class="rfloat">Website : <a href="nonglamsantienphuc.com">www.nonglamsantienphuc.com</a></span></p>
+							<p><span class="lfloat">Xí nghiệp 1: Huyện Tiên Phước - Tỉnh Quảng Nam</span> <span class="rfloat">Xí nghiệp 2: Phú Mỹ - Nam Từ Liêm - TP.Hà NỘi</span></p>
+						</div>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
 			</div>

@@ -821,7 +821,6 @@ span + .edit-link:before,
  */
 
 .site {
-	background-color: #fff;
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -850,7 +849,28 @@ span + .edit-link:before,
  * 4.0 Header
  * -----------------------------------------------------------------------------
  */
-
+ .header-container{
+	 float: left;
+	 width: 100%;
+	 background: url(images/bg-header-top.png) repeat-x center top 35px #fff;
+ }
+.main-container,
+.footer-contaier{
+	width: 100%;
+	float: left;
+}
+.footer{
+	width: 1000px;
+	margin: 0 auto;
+}
+.footer .site-info{
+	padding:0;
+}
+.site-info > div{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0 64px;
+} 
 /* Ensure that there is no gap between the header and
 	 the admin bar for WordPress versions before 3.8. */
 #wpadminbar {
@@ -1192,7 +1212,9 @@ ul{
 	float: left;
 }
 .site-info{
-	text-align: center;
+	font: 300 14px/25px "Arial" ;
+	color: #09458d;
+	padding: 20px 0!important;
 }
 .site-info p{
 	margin: 0;
@@ -3151,6 +3173,16 @@ a.post-thumbnail:hover {
  * 8.0 Footer
  * -----------------------------------------------------------------------------
  */
+ .name-company{
+	 text-transform: uppercase;
+	 font-weight: bold;
+ }
+ .lfloat{
+	 float: left;
+ }
+ .rfloat{
+	 float: right;
+ }
 
 #supplementary {
 	padding: 0 10px;
@@ -3159,11 +3191,11 @@ a.post-thumbnail:hover {
 .site-footer,
 .site-info,
 .site-info a {
-	color: rgba(255, 255, 255, 0.7);
+	
 }
 
 .site-footer {
-	background-color: #000;
+	background-color: #cad4e1;
 	font-size: 12px;
 	position: relative;
 	z-index: 3;
