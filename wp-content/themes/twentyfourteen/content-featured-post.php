@@ -9,8 +9,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>">
-	<?php twentyfourteen_post_thumbnail(); ?>
+	<?php  twentyfourteen_post_thumbnail(); ?>
 	<div>
-		<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );?>
+		<?php 
+			$title = get_the_title(); 
+			cutString($title, 87);
+		?>
+		<h2 class="entry-title"><a title="<?php the_title(); ?>" href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"> <?php echo $title; ?></a></h2>
 	</div>
 </article><!-- #post-## -->

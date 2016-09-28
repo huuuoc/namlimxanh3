@@ -35,7 +35,7 @@
 				}
 			?>
 		</div>
-		<a class="more-show" href="<?php echo get_permalink() ;?>" title="Xem chi tiết">Chi tiết >> </a>
+		<a class="more-show" href="<?php echo get_permalink() ;?>" title="Xem chi tiết">Xem chi tiết</a>
 		</div>
 	</div>
 	

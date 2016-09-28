@@ -16,7 +16,8 @@
 			<?php
 				$args1 = array(
 					'category__in' => array(4),
-					'order'   => 'ASC'
+					'order'   => 'ASC',
+					'posts_per_page' => 4
 				);
 				echo CustomQuery($args1,'featured-post','featured-post-first');
 			?>
@@ -31,7 +32,8 @@
 			<?php
 				$args2 = array(
 					'category__in' => array(5),
-					'order'   => 'ASC'
+					'order'   => 'ASC',
+					'posts_per_page' => 6
 				);
 				echo CustomQuery($args2,'listTitle');
 			?>
@@ -57,7 +59,7 @@
 		</div>
 	</div>
 	
-	<!--Block Ho tro-->
+	<!--Block -->
 	<div class="block-hoidap">
 		<div class="block-content">
 			<div class="content">
@@ -82,7 +84,8 @@
 				<?php
 					$args2 = array(
 						'category__in' => array(6),
-						'order'   => 'ASC'
+						'order'   => 'ASC',
+						'posts_per_page' => 6
 					);
 					$a = CustomQuery($args2,'featured-post','featured-post-first');
 					echo $a;
@@ -99,7 +102,8 @@
 				<?php
 					$args3 = array(
 						'category__in' => array(7),
-						'order'   => 'ASC'
+						'order'   => 'ASC',
+						'posts_per_page' => 6
 					);
 					$a = CustomQuery($args3,'featured-post','featured-post-first');
 					echo $a;

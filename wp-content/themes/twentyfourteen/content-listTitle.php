@@ -14,5 +14,5 @@
 	//cutString($title,40);
 ?>
 <li>
-	<a href="<?php echo  esc_url( get_permalink() )?> "> <?php echo $title?></a>
+	<a title="<?php the_title(); ?>" href="<?php echo  esc_url( get_permalink() )?> "> <?php echo $title?></a>
 </li>

@@ -11,39 +11,65 @@
 ?>
 				<div class="block-support">
 					<ul>
-						<li>
-							<span class="line-1">Tư vấn về nấm lim xanh</span><br/>
-							<span class="line-2">Hãy liên hệ ngay với chúng tôi</span>
-						</li>
 						<li><a href="#">
 							Tổng đài tư vấn <br>
-							<span>04.3797.0138</span>
+							<span  class="phone">04.3797.0138</span>
 						</a></li>
 						<li><a href="#">
 							Dược sỹ Dung <br>
-							<span> 0936.476.588</span>
+							<span  class="phone"> 0936.476.588</span>
 						</a></li>
 						<li><a href="#">
 							Dược sỹ Hoa <br>
-							<span>0919.257.838</span>
+							<span  class="phone">0919.257.838</span>
 						</a></li>
 						<li><a href="#">
 							Hỗ trợ hậu mãi<br>
-							<span>04.85878602</span>
+							<span class="phone">04.85878602</span>
 						</a></li>
 						
 					</ul>
 				</div>
 				<div class="block-angency">
 					<ul>
-						<li lang="#tab1" class="active">Đại lý Miền Bắc <span class="arrow-left"></span></li>
-						<li lang="#tab2">Đại lý Miền Trung <span class="arrow-left"></span></li>
-						<li lang="#tab3">Đại lý Miền Nam <span class="arrow-left"></span></li>
+						<li lang="#tab1" class="active">Đại lý Miền Bắc </li>
+						<li lang="#tab2">Đại lý Miền Trung </li>
+						<li lang="#tab3">Đại lý Miền Nam </li>
 					</ul>
 					<div class="tab-content">
-						<div id="tab1" class="active">Miên Bắc</div>
-						<div id="tab2">Miền Trung</div>
-						<div id="tab3">Miền Nam</div>
+						<div id="tab1" class="active">
+							<ul>
+								<?php
+									$args2 = array(
+										'category__in' => array(9),
+										'order'   => 'ASC'
+									);
+									echo CustomQuery($args2,'listTitle');
+								?>
+							</ul>
+						</div>
+						<div id="tab2">
+							<ul>
+								<?php
+									$args2 = array(
+										'category__in' => array(10),
+										'order'   => 'ASC'
+									);
+									echo CustomQuery($args2,'listTitle');
+								?>
+							</ul>
+						</div>
+						<div id="tab3">
+							<ul>
+								<?php
+									$args2 = array(
+										'category__in' => array(11),
+										'order'   => 'ASC'
+									);
+									echo CustomQuery($args2,'listTitle');
+								?>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div><!-- #main -->
@@ -61,7 +87,7 @@
 							<p class="name-company">Công Ty TNHH Nông Lâm Sản Tiên Phước - Nấm Lim Xanh Từ Rừng Nguyên Sinh</p>
 							<p><span class="lfloat">Liên hệ : 04.3797.0138 - 0936.476.588</span> <span class="rfloat">Trụ sở: 158/149 Hồ Tùng Mậu - Nam Từ Liêm - Hà Nội</span></p>
 							<p><span class="lfloat">Email: <a href="mailto:nonglamsantienphuoc@gmail.com">nonglamsantienphuoc@gmail.com</a></span><span class="rfloat">Website : <a href="nonglamsantienphuc.com">www.nonglamsantienphuc.com</a></span></p>
-							<p><span class="lfloat">Xí nghiệp 1: Huyện Tiên Phước - Tỉnh Quảng Nam</span> <span class="rfloat">Xí nghiệp 2: Phú Mỹ - Nam Từ Liêm - TP.Hà NỘi</span></p>
+							<p><span class="lfloat">Xí nghiệp 1: Huyện Tiên Phước - Tỉnh Quảng Nam</span> <span class="rfloat">Xí nghiệp 2: Phú Mỹ - Nam Từ Liêm - TP.Hà Nội</span></p>
 						</div>
 					</div><!-- .site-info -->
 				</footer><!-- #colophon -->
